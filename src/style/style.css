@@ -1,0 +1,154 @@
+.total-price {
+    font-weight: bold;
+    font-size: 16pt;
+    color: black;
+    text-align: left;
+    margin: 15px;
+}
+
+.pizza-builder-container {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.image-container {
+    width: 50%;
+    height: auto;
+    float: left;
+    border: 1px solid gray;
+}
+
+.builder-container {
+    width: 50%;
+    height: auto;
+    float: right;
+    /*border: 1px solid gray;*/
+}
+
+.pizza-builder {
+    /*border: 1px solid silver;*/
+    margin: 10px;
+    height: auto;
+}
+
+.crust-header, .sause-header, .cheese-header {
+    background: rgb(240, 239, 239);
+    height: 50px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+    clear: both;
+}
+
+.pizza-type span {
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.pizza-type-container {
+    display: flex;
+}
+
+.img-wrapper {
+    text-align: left;
+    float: left;
+    overflow: hidden;
+    margin-left: 10px; 
+    max-height: 50px;
+    cursor: pointer;
+    border: 0px solid gray;
+}
+
+.pan-pizza-desc, .ht-pizza-desc, .thin-pizza-desc, .cm-pizza-desc, .cgp-pizza-desc {
+    width: 105px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+    color: gray;
+    border: 0px solid blue;
+    float: left;
+}
+.pan-pizza-info, .ht-pizza-info, .thin-pizza-info, .cm-pizza-info {
+    margin-left: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.pan-pizza-container, .ht-pizza-container, .thin-pizza-container,
+.cm-pizza-container, .cgp-pizza-container {
+    margin: 10px;
+    width: 140px;
+}
+
+.crust-size-text, .sauce-amount-text {
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: left;
+    margin: 15px 0 0 25px;
+}
+.crust-size-text > span, .sauce-amount-text > span {
+    font-size: 12pt;
+    text-align: left;
+    font-weight: normal;
+    margin: 0 0 0 5px;
+}
+
+.separator {
+    border-top: 1px solid silver;
+    width: 100%;
+}
+
+.large > .btn-pizza-large, .large > .btn-pizza-medium {
+    width: 250px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+.medium > .btn-pizza-large, .medium > .btn-pizza-medium, .medium > .btn-pizza-personal {
+    width: 125px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+}
+
+.btn-sauce-extra, .btn-sauce-medium, .btn-sauce-light, .btn-sauce-none {
+    width: 100px;
+    float: left;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.btn-selected {
+    border: 1px solid #d00505;
+}
+
+.pizza-image {
+    position: relative;
+    margin: 20px 150px;
+    width: 400px;
+    height: 400px;
+}
+
+.pb-crust-pan-img, .pb-crust-ht-img, 
+.pb-crust-thin-img, 
+.pb-sauce-cm-img, .pb-sauce-cgp-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    width: 375px;
+}
+
+.pb-cheese-ml-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 375px;
+}
