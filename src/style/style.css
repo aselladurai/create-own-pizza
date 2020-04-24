@@ -142,7 +142,7 @@
     top: 20px;
     left: 20px;
     z-index: -1;
-    width: 375px;
+    
 }
 
 .pb-cheese-ml-img {
@@ -150,5 +150,5 @@
     top: 20px;
     left: 20px;
     z-index: 1;
-    width: 375px;
+    
 }

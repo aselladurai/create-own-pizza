@@ -8,7 +8,7 @@ const PizzaBuilderContainer = () => {
     const [pizzaBuilderInfo, setPizzaBuilderInfo] = useState({})
 
     const updateParent = (param) => {
-        //console.log(param);
+        console.log(param);
         setPizzaBuilderInfo(param);
     }
     return (
