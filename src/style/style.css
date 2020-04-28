@@ -128,16 +128,21 @@
     border: 1px solid #d00505;
 }
 
+.fa-check-circle {
+    vertical-align: super;
+}
+
 .pizza-image {
-    position: relative;
-    margin: 20px 150px;
+    position: sticky; top: 0;
+    margin: 20px 90px;
     width: 400px;
     height: 400px;
 }
 
 .pb-crust-pan-img, .pb-crust-ht-img, 
 .pb-crust-thin-img, 
-.pb-sauce-cm-img, .pb-sauce-cgp-img {
+.pb-sauce-cm-img, .pb-sauce-cgp-img
+{
     position: absolute;
     top: 20px;
     left: 20px;
@@ -145,10 +150,88 @@
     
 }
 
-.pb-cheese-ml-img {
+.pb-cheese-ml-img, .pb-topping-spinach-img {
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 1;
     
 }
+.pizza-image > .toppings {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.toppingItem-selected {
+    width: 100%;
+    cursor: pointer;
+    height: 140px;
+    border-bottom: 1px solid silver;
+    background-color: #f5f5f5;
+}
+.toppingItem-unselected {
+    width: 100%;
+    cursor: pointer;
+    height: 80px;
+    border-bottom: 1px solid silver;
+    background-color: #f5f5f5;
+}
+
+.toppingImageContainer {
+    width: 18%;
+    height: auto;
+    float: left;
+    border: 0px solid gray;
+}
+
+.toppingInfo {
+    width: 82%;
+    height: 80px;
+    float: right;
+    border: 0px solid gray;
+}
+
+.toppingName {
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+    font-size: 14pt;
+    float: left;
+}
+
+.toppingDesc {
+    float: left;
+    clear: both;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.toppingImage-selected {
+    margin-top: 20px;
+}
+.toppingImage-unselected {
+    margin-top: 0px;
+}
+
+.toppingBtnControls, .toppingImgControls {
+    float: left;
+}
+
+.toppingBtnControls > .selected {
+    border: 1px solid red;
+}
+
+.btn-topping-extra, .btn-topping-regular, .btn-topping-none {
+    margin: 5px 10px;
+}
+
+.toppingImgControls {
+    margin: 5px 0 0 40px; 
+}
+
+.toppingImgControls > img {
+    margin: 5px;
+}
+
+

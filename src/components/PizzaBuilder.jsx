@@ -11,6 +11,7 @@ import { Med, Lg, Per } from '../constants/size';
 import objPizzaBuilder from '../assets/labels/labels';
 import { priceObj } from '../constants/price';
 import { CM, CGP, BBQ, EXTRA, REGULAR, LIGHT, NONE, DEFAULT_AMT } from '../constants/sauce';
+import ToppingList from './pizza_builder/ToppingList';
 
 const PizzaBuilder = (props) => {
     const defaultCrustSize = Med;
@@ -454,12 +455,19 @@ const PizzaBuilder = (props) => {
         });
         getTotalPrice(objPizzaBuilder);
     }
+
+    const updatePizzaBuilderContainer = (toppingList) => {
+        props.updatePBContainer(toppingList);
+    }
     
     return (
         <div>
             <div className="total-price">${props.totalPrice.toFixed(2)}</div>
             <div className="pizza-builder">
                 <Tabs className="pizza-builder-tabs">
+                    <Tab eventKey="toppings" title="Toppings">
+                        <ToppingList updatePB={updatePizzaBuilderContainer} />
+                    </Tab>
                     <Tab eventKey="crust" title="Crust, Sause and Cheese">
                         <Crust 
                         panPizzaClick={panPizzaClick}
@@ -488,9 +496,7 @@ const PizzaBuilder = (props) => {
                         btnCheeseNoneClick={btnCheeseNoneClick} 
                         extraCheesePrice={pizzaBuilder.cheese.extraCheesePrice.toFixed(2)} />
                     </Tab>
-                    <Tab eventKey="toppings" title="Toppings">
-                        Toppings
-                    </Tab>
+                    
                 </Tabs>
             </div>
         </div>

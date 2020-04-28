@@ -64,7 +64,7 @@ const priceReducer = (state = {
                 ...params,
                 totalPrice
             }
-            console.log(state);
+            //console.log(state);
             break;
         default: break;
     }

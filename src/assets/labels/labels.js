@@ -51,8 +51,21 @@ const objCheese = {
     btnNone: 'None'
 }
 
-const objPizzaBuilder = {
-    objCrust, objModal, objSauce, objCheese
+const objToppings = {
+    lblMushrooms: 'Mushrooms',
+    lblRoastedSpinach: 'Roasted Spinach',
+    lblRedOnions: 'Red Onions',
+    lblBlackOlives: 'Mediterranean Black Olives',
+    lblGreenPeppers: 'Green Bell Peppers',
+    lblBananaPeppers: 'Banana Peppers',
+    lblPineapple: 'Pineapple',
+    lblJalapenoPeppers: 'Jalapeño Peppers',
+    lblRomaTomatoes: 'Roma Tomatoes'
 }
+
+const objPizzaBuilder = {
+    objCrust, objModal, objSauce, objCheese, objToppings
+}
+
 
 export default objPizzaBuilder;
