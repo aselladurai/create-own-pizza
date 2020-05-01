@@ -132,8 +132,14 @@
     vertical-align: super;
 }
 
+.pizza-image-container {
+    position: '-webkit-sticky';
+    position: sticky;
+    top: 0;
+}
+
 .pizza-image {
-    position: sticky; top: 0;
+    position: absolute;
     margin: 20px 90px;
     width: 400px;
     height: 400px;
@@ -234,4 +240,10 @@
     margin: 5px;
 }
 
+.topping-left {
+    clip: rect(0px, 264px, 525px, 0px)
+}
 
+.topping-right {
+    clip: rect(0px, 525px, 525px, 264px)
+}

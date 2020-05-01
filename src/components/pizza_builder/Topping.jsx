@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import '../../style/style.css';
 import cheese_moz from '../../assets/images/pizza_type/icon_cheese_Mozzarella.webp';
 import objPizzaBuilder from '../../assets/labels/labels';
-
+import { defaultToppingAmount } from '../../constants/size';
 import btnLeftDisabled from '../../assets/images/toppings/btn-topping-left-inactive.png';
 import btnLeftEnabled from '../../assets/images/toppings/btn-topping-left-active.png'
 import btnRightDisabled from '../../assets/images/toppings/btn-topping-right-inactive.png'
@@ -18,7 +18,7 @@ const Topping = (props) => {
         Name: props.toppingName,
         Desc: props.toppingDesc,
         IsSelected: props.isSelected,
-        Amount: 'Regular', //Extra/Regular/None
+        Amount: defaultToppingAmount, //Extra/Regular/None
         LRW: props.toppingLRW // L/R/W
     })
 

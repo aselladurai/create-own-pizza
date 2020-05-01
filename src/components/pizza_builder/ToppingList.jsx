@@ -30,7 +30,7 @@ const ToppingList = (props) => {
             iconImage: spinach_icon,
             toppingName: objPizzaBuilder.objToppings.lblRoastedSpinach,
             toppingDesc: '',
-            isSelected: true,
+            isSelected: false,
             Amount: '',
             toppingLRW: 'R'
         },
